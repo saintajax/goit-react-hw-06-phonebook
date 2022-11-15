@@ -1,5 +1,4 @@
 import styled, { keyframes } from 'styled-components';
-import { TransitionGroup } from 'react-transition-group';
 
 const fadeIn = keyframes`
   0% {
@@ -23,7 +22,7 @@ const fadeOut = keyframes`
   }
 `;
 
-export const List = styled(TransitionGroup)`
+export const List = styled.ul`
   /* list-style: none; */
   padding: ${props => props.theme.space[0]}px;
   margin: ${props => props.theme.space[0]}px;
